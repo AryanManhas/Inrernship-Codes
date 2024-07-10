@@ -290,7 +290,7 @@ And print:
  percentage of class attended
 
  Is student is allowed to sit in exam or not.*/
-
+/*
 #include <iostream>
 using namespace std;
 
@@ -314,3 +314,88 @@ int main()
     }
     return 0;
 }
+//Currency Conversion Code
+#include <iostream>
+using namespace std;
+
+float rs_pd(float a)
+{
+    return a * 0.0093;
+}
+float pd_rs(float a)
+{
+    return a * 106.99;
+}
+float rs_dl(float a)
+{
+    return a * 0.0119733;
+}
+float dl_rs(float a)
+{
+    return a * 83.53;
+}
+float rs_yn(float a)
+{
+    return a * 0.087106;
+}
+float yn_rs(float a)
+{
+    return a * 11.480309;
+}
+
+int main()
+{
+    int x;
+    cout << "1. Pound to Rupees." << endl;
+    cout << "2. Rupees to Pound." << endl;
+    cout << "3. USD to Rupees." << endl;
+    cout << "4. Rupees to USD." << endl;
+    cout << "5. Yuan to Rupees." << endl;
+    cout << "6. Rupees to Yuan." << endl;
+    cin >> x;
+
+    float amt;
+    cout << "Enter The Amount: ";
+    cin >> amt;
+
+    switch (x)
+    {
+    case 1:
+    {
+        cout << "Converted Amount: " << rs_pd(amt);
+        break;
+    }
+    case 2:
+    {
+        cout << "Converted Amount: " << pd_rs(amt);
+        break;
+    }
+    case 3:
+    {
+        cout << "Converted Amount: " << rs_dl(amt);
+        break;
+    }
+    case 4:
+    {
+        cout << "Converted Amount: " << dl_rs(amt);
+        break;
+    }
+    case 5:
+    {
+        cout << "Converted Amount: " << rs_yn(amt);
+        break;
+    }
+    case 6:
+    {
+        cout << "Converted Amount: " << yn_rs(amt);
+        break;
+    }
+    default:
+    {
+        cout << "Invalid choice.";
+    }
+    }
+
+    return 0;
+}
+*/
