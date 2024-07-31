@@ -3,92 +3,73 @@ using namespace std;
 
 int main()
 {
-    int array[5] = {10, 20, 30, 40, 50};
-    // --------------------------------------------------------------------------------
-    // TO Find Sum of elements in an Array :
-    int sum = 0;
-    for (auto x : array) // automatically assign the data type to varibale which is your are use.
-        sum += x;
-    sum += x;
-    cout << "Sum is " << sum
-
-        //----------------------------------------------------------------------------------
-        //----------------------------------------------------------------------------------
-        // To Find the minimum or maximum elements in an array :
-        int max = -32678;
-    for (auto temp : array)
-    {
-        if (temp > max) // use if (temp < min) then in = INT64_MAX intial for minimum
-        {
-            max = temp;
-        }
-        int user_input;
-        cout << "Enter the number you want to search for in the array :";
-        cin >> user_input;
-        int counter = 0;
-        for (auto x : array)
-        {
-            if (x == user_input)
-            {
-                cout << "Number " << user_input << " is found at the location: " << counter;
-
-                exit(0);
-            }
-            counter++;
-        }
-        cout << "Not Founder: ";
+    int a[5]; // Decalration of an array
+    int b[5]={1,2,3,4,5,8}; //Declaration with size and initilisation
+    int c[5]={1,5,8,6,7,236,65}; //
+    int d[5]={
     }
-    cout << "Not Found";
-    return 0;
-}
 
+}
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int a[5] = {1, 4, 2, 3, 8};
-    int i;
-    int value = 5;
-    int count = 0;
-    // pick the first element of the pair along with a[i]
-    for (int i = 0; i < 5; i++)
-        // pick the second element of the pair along with a[i]
-        for (int j = i + 1; j < 5; j++)
-        {
-            if (a[i] + a[j] == value)
-            {
-                count = count + 1;
-            }
-        }
-    cout << "the count of pairs " << value << " is " << count << endl;
-    return 0;
+    /*
+    int a[5]; //array declaration
+    int b[5] {1 , 2 , 3, 4 , 5}; //declaration with size and initialization
+    int c[] {1, 2 , 3 , 4 , 5 , 6 , 7 }; //declaration without size but with initialization
+    int d[5] ;
+    */
+/*
+ int a[5]{1, 3, 5, 7, 9};
+ cout << "Completely initialized Int Array A :" << endl;
+
+ for (int x : a)
+ {   //
+     // Read as for x in array a
+     // for each loop liberates through elements of the array
+     cout << x << endl;
+     cout << endl;
+ }
+ int b[6] = {1, 3, 5};
+ cout << "Partial Initialized int array B : " << endl;
+
+ for (int y : b)
+ {
+     /*shows that for each loop will work according to size of array and not accorfing
+the number of elements initialized in the array*/
+cout << y << endl;
+cout << endl;
+/*}
+float c[6] = {1.2, 2.4, 3.6, 4.8, 48.54, 99.48};
+cout << "Completely Initialized Float Array C: ";
+
+for (float z : c)
+{
+    cout << z << endl;
+    cout << endl;
+}
+
+float d[6] = {12.6, 82.4, 4.54, 77.48, 84.88}; // No need to know the type of array
+cout << "Completely Initialized Float Array C with auto : " << endl;
+
+for (float z : d)
+{
+    cout << z << endl;
+    cout << endl;
+}
+char e[5] = {'A', 66, 'C', 68, 'E'}; // No need to know the type of array
+cout << "Completely Initialized Char Array E with auto : " << endl;
+for (auto z : e)
+{
+    cout << z << endl;
+    cout << endl;
+}
+return 0;
 }*/
-
+/*
 #include <iostream>
-using namespace std;
-
-int main()
-{
-    int i;
-    int j;
-    for (i = 1; i <= 5; i++) // Print a stars format star pattern which goes from 1 to 5 star.
-    {
-        for (j = 1; j <= 5; j++)
-        {
-            if (i + j < 5) // use if (i<=j) for top right triangle which gpes from s to 1 star
-                cout << "* ";
-            else
-            {
-                cout << "  ";
-            }
-            cout << endl;
-        }
-        return 0;
-    }
-}
-
-/*#include <iostream>
 using namespace std;
 
 int main()
@@ -108,11 +89,11 @@ int main()
         int max = -32678;
     for (auto temp : array)
     {
-        if (temp > max) // use if (temp < min) then in = INT64_MAX intial for minimum
+        if (temp > max) // use if (temp < min) then in = INT64_MAX intiall for minimum
         {
             max = temp;
         }
-        int user_input;
+        int user input;
         cout << "Enter the number you want to search for in the array :";
         cin >> user_input;
         int counter = 0;
@@ -120,7 +101,7 @@ int main()
         {
             if (x == user_input)
             {
-                cout << "Number " << user_input << " is found at the location: " << counter;
+                cout >> "Number " << user_input << " is found at the location: " << counter;
 
                 exit(0);
             }
@@ -128,127 +109,5 @@ int main()
         }
         cout << "Not Founder: ";
     }
-    cout << "Not Found";
-    return 0;
-}
-
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    int a[5] = {1, 4, 2, 3, 8};
-    int i;
-    int value = 5;
-    int count = 0;
-    // pick the first element of the pair along with a[i]
-    for (int i = 0; i < 5; i++)
-        // pick the second element of the pair along with a[i]
-        for (int j = i + 1; j < 5; j++)
-        {
-            if (a[i] + a[j] == value)
-            {
-                count = count + 1;
-            }
-        }
-    cout << "the count of pairs " << value << " is " << count << endl;
-    return 0;
+    cout << "Not Found" return 0;
 }*/
-
-/*#include <iostream>
-using namespace std;
-
-int main()
-{
-    int i;
-    int j;
-    for (i = 1; i <= 5; i++) // Print a stars format star pattern which goes from 1 to 5 star.
-    {
-        for (j = 1; j <= 5; j++)
-        {
-            if (i + j < 5) // use if (i<=j) for top right triangle which gpes from s to 1 star
-                cout << "* ";
-            else
-            {
-                cout << "  ";
-            }
-            cout << endl;
-        }
-        return 0;
-    }
-}
-
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    cout << "1. Insertion" << endl;
-    cout << "2. Deletion" << endl;
-    cout << "3. Updation" << endl;
-    cout << "4. Read" << endl;
-    cout << "5. Exit" << endl;
-    int c;
-    cout << "Enter Your Choice: ";
-    cin >> c;
-    int i;
-    int s;
-    cout << "Enter The Size of Array: ";
-    cin >> s;
-    int arr[i]={4 , 6 , 7 ,8};
-    int pos;
-    cout<<"Enter The Position for Element to be Inserted: ";
-    cin>>pos;
-    if (c == 1)
-    {
-        for (i = 0; i < s; i++)
-        {
-            cout << "Enter Element: ";
-            cin >> arr[i];
-            cout << "Element Inserted at position" << "" << arr[i] << endl;
-        }
-    }
-    else if (c == 2)
-    {
-        int b;
-        cout<<"Enter The Element to be Deleted: ";
-        cin>>b;
-        if (arr[i]==0)
-        {
-            cout<<""
-        }
-    }
-    return 0;
-}*/
-
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    int sum, product;
-    cin >> sum >> product;
-
-    for (int x = 1; x <= sum / 2; ++x)
-    {
-        int y = sum - x;
-        if (x * y == product)
-        {
-            if (x < y)
-            {
-                cout << x << " " << y << endl;
-            }
-            else
-            {
-                cout << y << " " << x << endl;
-            }
-            return 0;
-        }
-
-        // If no pair is found
-        cout << "No valid pair found." << endl;
-
-        return 0;
-    }
-}
-

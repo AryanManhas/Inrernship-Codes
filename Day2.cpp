@@ -130,19 +130,19 @@ int main(){
 #include <iostream>
 using namespace std;
 
-void Add(int num1, int num2)
+float Add(int num1, int num2)
 {
     cout << num1 + num2 << endl;
 }
-void Difference(int num1, int num2)
+float Difference(int num1, int num2)
 {
     cout << num1 - num2 << endl;
 }
-void Product(int num1, int num2)
+float Product(int num1, int num2)
 {
     cout << num1 * num2 << endl;
 }
-void Remainder(int num1, int num2)
+float Remainder(int num1, int num2)
 {
     cout << num1 % num2 << endl;
 }
@@ -164,10 +164,10 @@ Function Features-
 2)Readability
 create the below function
 add()
-void sub()
-void div()
-void multiply()
-void rem()*/
+float sub()
+float div()
+float multiply()
+float rem()*/
 /*
 #include <iostream>
 using namespace std;
@@ -313,8 +313,8 @@ int main()
         cout << "Not Allowed to Sit." << endl;
     }
     return 0;
-}
-//Currency Conversion Code
+}*/
+
 #include <iostream>
 using namespace std;
 
@@ -398,4 +398,3 @@ int main()
 
     return 0;
 }
-*/
