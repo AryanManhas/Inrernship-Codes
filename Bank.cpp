@@ -1,62 +1,69 @@
-BankAccount account(name, initial_balance);
+/*#include <iostream>
+#include <vector>
+#include <algorithm>
 
-int choice;
+using namespace std;
 
-do
+class BankAccount
 {
+private:
+    int balance;
+    int accountNumber;
 
-    cout << "1.Deposit Money\n2.Withdraw Money\n3.Check Balance\n4.Exit\n";
+public:
+    BankAccount(int accNum, int initial_balance = 0)
+        : accountNumber(accNum), balance(initial_balance) {}
 
-    cin >> choice;
-
-    switch (choice)
+    void deposit(int amount)
     {
-
-    case 1:
-
-        double amt;
-
-        cout << "Enter amount to be deposited: ";
-
-        cin >> amt;
-
-        account.deposit(amt);
-
-        break;
-
-    case 2:
-    {
-
-        double amount;
-
-        cout << "Enter amount to withdraw: ";
-
-        cin >> amount;
-
-        account.withdraw(amt);
-
-        break;
+        if (amount > 0)
+        {
+            balance += amount;
+            cout << "Deposited: $" << amount << " to account " << accountNumber << endl;
+        }
+        else
+        {
+            cout << "Deposit amount must be positive." << endl;
+        }
     }
 
-    case 3:
-
-        account.checkBalance();
-
-        break;
-
-    case 4:
-
-        cout << "Exiting program." << std::endl;
-
-        break;
-
-    default:
-
-        cout << "Invalid choice. Please try again." << std::endl;
-
-        break;
+    void withdraw(int amount)
+    {
+        if (amount > 0)
+        {
+            if (amount <= balance)
+            {
+                balance -= amount;
+                cout << "Withdrew: $" << amount << " from account " << accountNumber << endl;
+            }
+            else
+            {
+                cout << "Insufficient funds in account " << accountNumber << endl;
+            }
+        }
+        else
+        {
+            cout << "Withdrawal amount must be positive." << endl;
+        }
     }
 
-} while (choice != 4);
+    void check_balance() const
+    {
+        cout << "Current balance in account " << accountNumber << ": $" << balance << endl;
+    }
 
-return 0;
+    int getAccountNumber() const
+    {
+        return accountNumber;
+    }
+};
+
+void displayMenu()
+{
+    cout << "\nBank Menu:\n";
+    cout << "1. Deposit\n";
+    cout << "2. Withdraw\n";
+    cout << "3. Check Balance\n";
+    cout << "4. Exit\n";
+    cout << "Enter your choice: ";
+}*/
